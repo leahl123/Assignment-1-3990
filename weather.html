@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Eleanor Gaye">
+    <title>Assessment: marking up a letter</title>
+    <style>
+      body {
+        background: #C2EFFD;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0 auto;
+      }
+
+      .searchbar {
+        background: #e1f7fe;
+        align-items: center;
+        justify-content: center;
+        border-color: black;
+        margin-left: 75px;
+        margin-right: 75px;
+        margin-top: 50px;
+        border-radius: 25px;
+        display: flex;
+        width: 300px;
+        
+
+      }
+      .philadelphia {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 33px;
+        color: #2E2E2E;
+        text-align: center;
+        margin-left: 10px;
+        line-height: 13px;
+      }
+      
+      .search-icon {
+        width: 33px;
+        height: 33px;
+      }
+
+      .sunny-icon {
+        width: 350px;
+        height: 350px;
+        margin-top: 30px;
+      }
+
+      .main-icon-group {
+        width: 375px;
+        background-color: #e1f7fe;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin:20px
+      }
+     
+    .small-text {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      color: #2E2E2E;
+      line-height: 15px;
+      text-align: center;
+    }
+
+    .suggestion-icons {
+      width:373px;
+      height: 221px;
+      margin:10px;
+      background-color: #f0fbff;
+      border-radius: 25px;
+      padding: 20px
+    }
+
+    .big-text {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 45px;
+          line-height: 0px;
+          color: #2E2E2E;
+    }
+
+    .hourly-icon-sun {
+      width: 90px;
+      height: 93px;
+    }
+
+    .hourly-cloudy-icon {
+      width: 85px;
+      height: 90px;
+    }
+
+
+    </style>
+  </head>
+
+  <body>
+        <div class="searchbar">
+          <img src="search-icon.png" alt="search icon" class="search-icon">
+          <div class="philadelphia">
+            <p> Philadelphia</p>
+          </div>
+        </div>
+        <img src="sunny.png" alt="clear skies" class="sunny-icon">
+        <div class="main-icon-group">
+          <div id="main-icon-temps" style="align-items: center; display: flex; flex-direction: column;" >
+            <div id="first-line-temps" style="display: flex; align-items: center; height: 200px"> 
+              <h1 style="font-family: 'Roboto';
+              font-style: normal;
+              font-weight: 600;
+              color: #2E2E2E;
+              font-size: 120px; margin-right: 20px">60°</h1>
+              <div id="high-and-low" style="align-items: center; display: flex; flex-direction: column;"> 
+                <p style="font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 33px;
+                color: #2E2E2E;
+                line-height: 0px"> H:65°</p>
+                <p style="font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 33px;
+                line-height: 0px"> L:50°</p>
+              </div>
+            </div>
+            <p style="font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 33px;
+            line-height: 0px;
+            color: #2E2E2E;
+            text-align: center;">Feels Like: 60°</p>
+          </div>
+        </div>
+        <div id="info-group" style="display: flex; background-color: #e1f7fe; padding:10px; margin: 20px; align-items: center; border-radius: 25px; justify-content: space-evenly; width: 900px;">
+          <div id="sunrise-sunset" style="display:flex; flex-direction: column; width: 250px;">
+            <div id="sunrise" style="display: flex;">
+              <img src="sunrise-1.png" alt="sunrise" style="height: 60px; margin-right: 10px; width:90px">
+              <p class="small-text">6:00 am</p>
+            </div>
+            <div id="sunset" style="display: flex">
+              <img src="sunset-1.png" alt="sunset" style="height: 60px; margin-right: 10px;">
+              <p class="small-text">5:00 pm</p>
+            </div>
+          </div>
+          <div id="humidity-container" style="display: flex; flex-direction: column; align-items: center;">
+            <p class="small-text">Humidity</p>
+            <img src="20%.png" alt="humidity chart" style="width: 175px;">
+          </div>
+          <div id="UV and see more" style="display:flex; align-items:flex-start;">
+            <div id="UV" style="display: flex; flex-direction: column; align-items: center;">
+              <p class="small-text">UV</p>
+              <img src="uv-bar.png" alt="uv bar" style="width: 200px;">
+              <p class="small-text">7, High</p>
+            </div>
+            <img src="more-1.png" alt="see-more button" style="margin-bottom: 20px; width: 50px;">
+          </div>
+        </div>
+        <div id="hourly weather" style="display: flex; flex-direction: column; background-color: #e1f7fe; padding:10px; margin: 15px; border-radius: 25px; width: 900px;">
+          <h1 class="big-text">Hourly Forecast</h1>
+          <div id="row of times" style="display: flex; justify-content: space-evenly;">
+            <p class="small-text">Now</p>
+            <p class="small-text">12PM</p>
+            <p class="small-text">1PM</p>
+            <p class="small-text">2PM</p>
+            <p class="small-text">3PM</p>
+            <p class="small-text">4PM</p>
+          </div>
+          <div id="row of icons" style="display: flex; justify-content: space-evenly; padding-left: 10px; padding-right: 10px;">
+            <img class="hourly-icon-sun" src="clear-hourly.png" alt="weather icon">
+            <img class="hourly-icon-sun" src="clear-hourly.png" alt="weather icon">
+            <img class="hourly-icon-sun" src="clear-hourly.png" alt="weather icon">
+            <img class="hourly-cloudy-icon" src="partlysunny-1.png" alt="weather icon">
+            <img class="hourly-cloudy-icon" src="partlysunny-1.png" alt="weather icon">
+            <img class="hourly-cloudy-icon" src="partlysunny-1.png" alt="weather icon">
+          </div>
+          <div id="row of weather" style="display: flex; justify-content: space-evenly;">
+            <p class="small-text">60°</p>
+            <p class="small-text">61°</p>
+            <p class="small-text">62°</p>
+            <p class="small-text">63°</p>
+            <p class="small-text">64°</p>
+            <p class="small-text">65°</p>
+          </div>
+        </div>
+        <div id="suggestions" style="display: flex; background-color:#e1f7fe;; padding:10px; margin: 20px; border-radius: 25px; height:auto; width: 900px; justify-content: center;">
+          <div id="attire-container" style="display: flex; flex-direction:column; align-items: center;">
+            <h1 class="big-text">Suggested Attire</h1>
+            <img class="suggestion-icons" src="clothes-icons.png" alt="clothes-group">
+            <div id="rate button" style="background-color: #f0fbff; width: 130px; border-radius: 25px; text-align: center;">
+              <p class="small-text">Rate</p>
+            </div>
+          </div>
+          <div id="activities-container" style="display: flex; flex-direction:column; align-items: center;">
+            <h1 class="big-text">Suggested Activites</h1>
+            <img class="suggestion-icons" src="activities-icons.png" alt="activities-group">
+            <div id="rate button" style="background-color: #f0fbff; width: 130px; border-radius: 25px; text-align: center;">
+              <p class="small-text">Rate</p>
+            </div>
+          </div>
+        </div>
+        <div id="bottom-buttons" style="display: flex; margin-top: 20px;">
+          <div id="radar-button" style="background-color:#e1f7fe; width: 265px; border-radius: 25px; text-align: center;">
+            <p class="small-text">Radar</p>
+          </div>
+          <div id="weekly-button" style="background-color:#e1f7fe; width: 265px; border-radius: 25px; text-align: center; margin-left: 15px; margin-right: 15px;">
+            <p class="small-text">Weekly Forecast</p>
+          </div>
+          <div id="more-button" style="background-color:#e1f7fe; width: 265px; border-radius: 25px; text-align: center;">
+            <p class="small-text">See More</p>
+          </div>
+        </div>
+  </body>
+
+</html>
